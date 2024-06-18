@@ -1,7 +1,7 @@
 import { TextField } from '@mui/material';
 import { LongAnswerProps } from '../dataStructure';
 
-const LongAnswer: React.FC<LongAnswerProps> = ({ question, onChange, value }) => {
+const LongAnswer: React.FC<LongAnswerProps> = ({ question, onChange, value }: LongAnswerProps) => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     onChange(event.target.value);
   };

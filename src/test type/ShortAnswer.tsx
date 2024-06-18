@@ -1,6 +1,10 @@
 import { Input } from '@mui/material';
 import { ShortAnswerProps } from '../dataStructure';
-const ShortAnswer: React.FC<ShortAnswerProps> = ({ question, onChange, value }) => {
+const ShortAnswer: React.FC<ShortAnswerProps> = ({
+  question,
+  onChange,
+  value
+}: ShortAnswerProps) => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     onChange(event.target.value);
   };

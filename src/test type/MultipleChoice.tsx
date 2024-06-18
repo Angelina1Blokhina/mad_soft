@@ -1,7 +1,12 @@
 import { Checkbox, FormControl, FormControlLabel, FormGroup } from '@mui/material';
 import { MultipleChoiceProps } from '../dataStructure';
 
-const MultipleChoice: React.FC<MultipleChoiceProps> = ({ question, options, onChange, value }) => {
+const MultipleChoice: React.FC<MultipleChoiceProps> = ({
+  question,
+  options,
+  onChange,
+  value
+}: MultipleChoiceProps) => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = event.target.value;
     const newValues = value.includes(newValue)

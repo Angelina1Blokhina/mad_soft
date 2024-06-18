@@ -30,8 +30,8 @@ const TestPage: React.FC = () => {
     handleNext();
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleChange = (value: any) => {
-    console.log('res', value);
     setProgress({
       ...progress,
       answers: {
@@ -42,8 +42,9 @@ const TestPage: React.FC = () => {
   };
 
   const handleTimeout = () => {
-    navigate('/result'); // Перейти на страницу с результатами по истечении времени
+    navigate('/result');
   };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const renderQuestion = (question: any) => {
     switch (question.type) {
       case 'single':
